@@ -1,0 +1,100 @@
+.show_room{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    margin-top: 40px;
+
+    .line{
+        height: 2px;
+        width: 100%;
+        background-color: $brown-text;
+    }
+
+    .container{
+        display: flex;
+        padding: 40px 0px;
+        width: 100%;
+    }
+
+
+    .show_room__row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .show_room__item{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        // &:first-child{
+        //     width: 50%;
+        // }
+
+        &:last-child > ul{
+           margin-top:16px
+        }
+
+        &:last-child > ul > li{
+            list-style: none;
+         }
+
+        &:last-child > ul  > ul > li{
+            list-style-type: square;
+         }
+    }
+   
+
+    
+
+    .show_room__item > img{
+        width:340px
+    }
+   
+
+    .info{
+        position: relative;
+        padding-left:32px;
+        margin: 4px 0px;
+        
+        &::before{
+            content: "";
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:28px;
+            height: 28px;
+
+            
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        &__location::before{
+            background-image: url('../../images/location.png');
+        }
+        
+        &__phone::before{
+            background-image: url('../../images/phone.png');
+        }
+        
+        font-weight: 400px;
+        font-size:22px;
+        line-height:34px;
+        text-transform: uppercase;
+    }
+
+
+
+    .show_room__item > p {
+        font-family: $font-accent;
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 22.4px;
+        color: $dark-text;
+    }
+
+    
+}

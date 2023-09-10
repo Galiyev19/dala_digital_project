@@ -1,0 +1,21 @@
+* {
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+	color: initial;
+}
+
+a:hover  {
+    text-decoration: none;
+}

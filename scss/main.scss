@@ -1,0 +1,12 @@
+//BASE
+@import "./base/reset";
+@import './base/fonts';
+@import "./base/vars";
+@import "./base/base";
+
+//BLOCKS
+@import './blocks/header';
+@import './blocks/show_room';
+@import './blocks/dealers_shop.scss';
+@import './blocks/footer';
+@import "./blocks/_google_map";

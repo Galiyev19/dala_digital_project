@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+  color: initial;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: url("../../fonts/BebasNeue-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../../fonts/Bahnschrift.ttf") format("ttf");
+}
+body {
+  font-family: "Bebas", sans-serif;
+  background-color: #FFFFFF;
+}
+
+.offset {
+  display: flex;
+  flex-direction: column;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header .head_container {
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.header .head_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header .head_info > span {
+  font-family: "Bebas", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31.2px;
+  text-transform: uppercase;
+  color: #686767;
+  cursor: pointer;
+}
+.header .nav_menu {
+  display: flex;
+  width: 100%;
+  background-color: #cccccc;
+  margin-top: 20px;
+}
+.header .nav_list_menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+}
+.header .nav_list_menu_item {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  height: 43px;
+  width: 100%;
+  border-left: 1px solid #727272;
+}
+.header .nav_list_menu_item:hover {
+  background-color: #727272;
+}
+.header .nav_list_menu_item:hover a > p {
+  color: #FFFFFF;
+}
+.header .nav_list_menu_item:nth-child(1) {
+  border-left: none;
+}
+.header .nav_list_menu_item:nth-child(6) {
+  border-left: none;
+}
+.header .nav_list_menu_item > a {
+  display: flex;
+  padding: 0px 10px;
+}
+.header .nav_list_menu_item > a > p {
+  font-family: "Bebas", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+.show_room {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+}
+.show_room .line {
+  height: 2px;
+  width: 100%;
+  background-color: #591413;
+}
+.show_room .container {
+  display: flex;
+  padding: 40px 0px;
+  width: 100%;
+}
+.show_room .show_room__row {
+  display: flex;
+  justify-content: space-between;
+}
+.show_room .show_room__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.show_room .show_room__item:last-child > ul {
+  margin-top: 16px;
+}
+.show_room .show_room__item:last-child > ul > li {
+  list-style: none;
+}
+.show_room .show_room__item:last-child > ul > ul > li {
+  list-style-type: square;
+}
+.show_room .show_room__item > img {
+  width: 340px;
+}
+.show_room .info {
+  position: relative;
+  padding-left: 32px;
+  margin: 4px 0px;
+  font-weight: 400px;
+  font-size: 22px;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+.show_room .info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.show_room .info__location::before {
+  background-image: url("../../images/location.png");
+}
+.show_room .info__phone::before {
+  background-image: url("../../images/phone.png");
+}
+.show_room .show_room__item > p {
+  font-family: "Bahnschrift", sans-serif;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #1D1D1B;
+}
+
+.dealers_shop {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+}
+.dealers_shop h2 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #591413;
+}
+.dealers_shop .dealers_shop__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+.dealers_shop .dealers_shop__grid h3 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #1D1D1B;
+}
+.dealers_shop .dealers_shop__grid_card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.dealers_shop .dealers_shop__location {
+  display: flex;
+  width: 100%;
+  margin-top: 12px;
+}
+.dealers_shop .dealers_shop__location > img {
+  height: 28px;
+  width: 28px;
+}
+.dealers_shop .dealers_shop__location > p {
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 350;
+  margin-left: 4px;
+}
+
+.footer {
+  display: flex;
+  background-color: #727272;
+  min-height: 305px;
+}
+
+.google_map {
+  display: flex;
+  width: 100%;
+  margin-top: 80px;
+}/*# sourceMappingURL=main.css.map */

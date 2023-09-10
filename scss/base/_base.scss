@@ -1,0 +1,11 @@
+body{
+    font-family: $font-main;
+    background-color: $white;
+}
+
+.offset{
+    display: flex;
+    flex-direction: column;
+    max-width: 980px;
+    margin: 0 auto;
+}
