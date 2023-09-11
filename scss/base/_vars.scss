@@ -1,6 +1,8 @@
 //FONTS
 $font-main: 'Bebas', sans-serif;
 $font-accent:  "Bahnschrift", sans-serif;
+$font-size-main: 25px;
+$line-height-main: 37px;
 
 
 //COLORS
@@ -8,3 +10,14 @@ $dark-text: #1D1D1B;
 $brown-text: #591413;
 $footer-bg: #727272;
 $white: #FFFFFF;
+
+
+//BREAKPOINTS
+$tablet: 996px;
+$tablet_sm: 768px;
+$phone_xxl: 540px;
+$phone_lg: 480px;
+$phone_sm: 414px;
+$phone_xs: 360px;
+
+

@@ -1,0 +1,36 @@
+.title{
+    font-family: $font-main;
+    font-size: $font-size-main;
+    font-weight: 400;
+    line-height: $line-height-main;
+}
+
+.color_brown{
+    color: $brown_text;
+}
+
+.color_dark{
+    color: $dark_text;
+}
+
+.color_white{
+    color: $white;
+}
+
+.text_upper{
+    text-transform: uppercase;
+}
+
+@include phone_lg {
+    .title{
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@include phone_sm {
+    .title{
+        font-size: 18px;
+        // line-height: 22px;
+    }
+}

@@ -12,7 +12,6 @@
 /* Links */
 a, a:link, a:visited {
   text-decoration: none;
-  color: initial;
 }
 
 a:hover {
@@ -39,6 +38,74 @@ body {
   margin: 0 auto;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .offset {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .offset {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .offset {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .offset {
+    max-width: 414px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .offset {
+    max-width: 360px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .offset {
+    max-width: 360px;
+  }
+}
+.title {
+  font-family: "Bebas", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 37px;
+}
+
+.color_brown {
+  color: #591413;
+}
+
+.color_dark {
+  color: #1D1D1B;
+}
+
+.color_white {
+  color: #FFFFFF;
+}
+
+.text_upper {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .title {
+    font-size: 18px;
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -51,12 +118,43 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+.header .header_mobile {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #727272;
+  transition: background-color 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.header .header_mobile .mobile_nav {
+  display: block;
+}
+.header .header_mobile .header__burger-btn {
+  position: fixed;
+  top: 40px;
+  right: 50px;
+}
 .header .head_info {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.header .head_info > span {
+@media screen and (max-width: 996px) {
+  .header .head_info {
+    display: none;
+  }
+}
+.header .head_info__text {
   font-family: "Bebas", sans-serif;
   font-weight: 400;
   font-size: 26px;
@@ -65,11 +163,78 @@ body {
   color: #686767;
   cursor: pointer;
 }
+.header .header__burger-btn {
+  display: none;
+  position: relative;
+  height: 25px;
+  width: 40px;
+  border: none;
+  background: transparent;
+}
+.header .header__burger-btn > span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #1D1D1B;
+}
+@media screen and (max-width: 996px) {
+  .header .header__burger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.header .header__burger-btn::before, .header .header__burger-btn::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #1D1D1B;
+  transition: all 0.3s ease 0s;
+}
+.header .header__burger-btn::before {
+  top: 0;
+}
+.header .header__burger-btn::after {
+  bottom: 0;
+}
+.header .header__burger-btn.header__burger-btn--active > span {
+  transform: scale(0);
+}
+.header .header__burger-btn.header__burger-btn--active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.header .header__burger-btn.header__burger-btn--active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+.header .mobile_nav {
+  display: none;
+}
+.header .mobile_nav .mobile_nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.header .mobile_nav .mobile_nav-list > li {
+  font-family: "Bebas", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 37px;
+  color: #FFFFFF;
+}
 .header .nav_menu {
   display: flex;
   width: 100%;
   background-color: #cccccc;
   margin-top: 20px;
+}
+@media screen and (max-width: 996px) {
+  .header .nav_menu {
+    display: none;
+  }
 }
 .header .nav_list_menu {
   display: flex;
@@ -106,7 +271,7 @@ body {
   display: flex;
   padding: 0px 10px;
 }
-.header .nav_list_menu_item > a > p {
+.header .nav_list_menu_item > a {
   font-family: "Bebas", sans-serif;
   font-weight: 400;
   font-size: 21px;
@@ -132,6 +297,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 996px) {
+  .show_room .show_room__row {
+    flex-direction: column;
+  }
+}
 .show_room .show_room__item {
   display: flex;
   flex-direction: column;
@@ -146,17 +316,15 @@ body {
 .show_room .show_room__item:last-child > ul > ul > li {
   list-style-type: square;
 }
-.show_room .show_room__item > img {
-  width: 340px;
+@media screen and (max-width: 996px) {
+  .show_room .show_room__item:last-child {
+    margin-top: 40px;
+  }
 }
 .show_room .info {
   position: relative;
   padding-left: 32px;
   margin: 4px 0px;
-  font-weight: 400px;
-  font-size: 22px;
-  line-height: 34px;
-  text-transform: uppercase;
 }
 .show_room .info::before {
   content: "";
@@ -188,13 +356,6 @@ body {
   width: 100%;
   margin-top: 40px;
 }
-.dealers_shop h2 {
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 37px;
-  text-transform: uppercase;
-  color: #591413;
-}
 .dealers_shop .dealers_shop__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -202,12 +363,10 @@ body {
   grid-column-gap: 40px;
   grid-row-gap: 40px;
 }
-.dealers_shop .dealers_shop__grid h3 {
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 37px;
-  text-transform: uppercase;
-  color: #1D1D1B;
+@media screen and (max-width: 768px) {
+  .dealers_shop .dealers_shop__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .dealers_shop .dealers_shop__grid_card {
   display: flex;
@@ -235,10 +394,87 @@ body {
   display: flex;
   background-color: #727272;
   min-height: 305px;
+  padding: 40px 0px;
+}
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 996px) {
+  .footer .container {
+    flex-direction: column;
+  }
+}
+.footer .footer_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .footer_block__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media screen and (max-width: 996px) {
+  .footer .footer_block__item {
+    align-items: start;
+  }
+}
+@media screen and (max-width: 996px) {
+  .footer .footer_block:first-child {
+    margin-bottom: 40px;
+  }
+}
+.footer .footer_menu {
+  list-style: none;
+  padding: 0;
 }
 
 .google_map {
   display: flex;
   width: 100%;
   margin-top: 80px;
+}
+
+@media screen and (max-width: 996px) {
+  .google_map > img {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .google_map > img {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .google_map > img {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .google_map > img {
+    max-width: 414px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .google_map > img {
+    max-width: 360px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .google_map > img {
+    max-width: 360px;
+  }
+}
+.logo {
+  display: flex;
+  max-width: 340px;
+}
+
+@media screen and (max-width: 996px) {
+  .logo {
+    width: 40%;
+  }
 }/*# sourceMappingURL=main.css.map */

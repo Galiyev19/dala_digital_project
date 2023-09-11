@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/logo.svg" />
-    <title>Document</title>
+    <title>AVRORADOORS</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -12,61 +12,77 @@
       <!-- HEADER -->
       <header class="header">
         <div class="head_container">
-          <img src="../images/logo.svg" />
+          <a href="dealers.html">
+            <img src="../images/logo.svg" class="logo" />
+          </a>
+          <!-- CONTACT INFO -->
           <div class="head_info">
-            <span>тел: +7 (473) 258-45-02</span>
-            <span>e-mail: avroradoors@mail.ru</span>
+            <span class="head_info__text">тел: +7 (473) 258-45-02</span>
+            <span class="head_info__text">e-mail: avroradoors@mail.ru</span>
           </div>
+          <!-- MOBILE NAV MENU -->
+          <nav class="mobile_nav">
+            <ul class="mobile_nav-list">
+              <li>ГЛАВНАЯ</li>
+              <li>НАШЕ ПРОИЗВОДСТВО</li>
+              <li>КАТАЛОГ</li>
+              <li>ГДЕ КУПИТЬ</li>
+              <li>СТАТЬ ЛИДЕРОМ</li>
+              <li>ВАКАНСИИ</li>
+            </ul>
+          </nav>
+
+          <!-- MOBILE NAV ICON -->
+          <button class="header__burger-btn" type="button">
+            <span></span>
+          </button>
         </div>
+
+        <!-- NAV MENU -->
         <nav class="nav_menu">
           <ul class="nav_list_menu">
             <li class="nav_list_menu_item">
-              <a>
-                <p>ГЛАВНАЯ</p>
-              </a>
+              <a>ГЛАВНАЯ</a>
             </li>
             <li class="nav_list_menu_item">
-              <a>
-                <p>НАШЕ ПРОИЗВОДСТВО</p>
-              </a>
+              <a>НАШЕ ПРОИЗВОДСТВО</a>
             </li>
             <li class="nav_list_menu_item">
-              <a>
-                <p>КАТАЛОГ</p>
-              </a>
+              <a>КАТАЛОГ</a>
             </li>
             <li class="nav_list_menu_item">
-              <a>
-                <p>ГДЕ КУПИТЬ</p>
-              </a>
+              <a>ГДЕ КУПИТЬ</a>
             </li>
             <li class="nav_list_menu_item">
-              <a>
-                <p>СТАТЬ ЛИДЕРОМ</p>
-              </a>
+              <a>СТАТЬ ЛИДЕРОМ</a>
             </li>
             <li class="nav_list_menu_item">
-              <a>
-                <p>ВАКАНСИИ</p>
-              </a>
+              <a>ВАКАНСИИ</a>
             </li>
           </ul>
         </nav>
       </header>
+
       <!-- SHOW ROOM BLOCK -->
       <section class="show_room">
         <div class="line"></div>
         <div class="container">
           <div class="show_room__row">
             <div class="show_room__item">
-              <img src="../images/logo.svg" alt="logo" />
-              <a href="#section-map" class="info info__location">
+              <img src="../images/logo.svg" class="logo" alt="logo" />
+              <a
+                href="#section-map"
+                class="info info__location title color_dark"
+              >
                 г. Воронеж ул. Пешестрелецкая, 28а</a
               >
-              <a href="tel:+79009591078" class="info info__phone"
+              <a
+                href="tel:+79009591078"
+                class="info info__phone title color_dark"
                 >+7 900 959 10 78</a
               >
             </div>
+
             <div class="show_room__item">
               <p>
                 Стильный шоу-рум, в котором мы собрали самые актуальные тренды
@@ -87,10 +103,12 @@
       </section>
       <!-- DEALERS SHOP  -->
       <section class="dealers_shop">
-        <h2>магазины официальных дилеров в г. Воронеж</h2>
+        <h2 class="title color_brown text_upper">
+          магазины официальных дилеров в г. Воронеж
+        </h2>
         <div class="dealers_shop__grid">
           <div class="dealers_shop__grid_card">
-            <h3>Двери в интерьер</h3>
+            <h3 class="title text_upper color_dark">Двери в интерьер</h3>
             <div class="dealers_shop__location">
               <img src="../images/location.png" />
               <p>
@@ -100,14 +118,14 @@
             </div>
           </div>
           <div class="dealers_shop__grid_card">
-            <h3>Ваши двери</h3>
+            <h3 class="title text_upper color_dark">Ваши двери</h3>
             <div class="dealers_shop__location">
               <img src="../images/location.png" />
               <p>г. Воронеж, ул.Димитрова д.120, 3-й этаж</p>
             </div>
           </div>
           <div class="dealers_shop__grid_card">
-            <h3>Воронеж Двери</h3>
+            <h3 class="title text_upper color_dark">Воронеж Двери</h3>
             <div class="dealers_shop__location">
               <img src="../images/location.png" />
               <p>
@@ -117,21 +135,21 @@
             </div>
           </div>
           <div class="dealers_shop__grid_card">
-            <h3>Дверной рай</h3>
+            <h3 class="title text_upper color_dark">Дверной рай</h3>
             <div class="dealers_shop__location">
               <img src="../images/location.png" />
               <p>г. Воронеж, ул.Пешестрелецкая д.101</p>
             </div>
           </div>
           <div class="dealers_shop__grid_card">
-            <h3>МВД</h3>
+            <h3 class="title text_upper color_dark">МВД</h3>
             <div class="dealers_shop__location">
               <img src="../images/location.png" />
               <p>г. Воронеж, ул.Холмистая 68 ТЦ Афанасьевский пав.3</p>
             </div>
           </div>
           <div class="dealers_shop__grid_card">
-            <h3>DVERIstore</h3>
+            <h3 class="title text_upper color_dark">DVERIstore</h3>
             <div class="dealers_shop__location">
               <img src="../images/location.png" />
               <p>
@@ -141,14 +159,14 @@
             </div>
           </div>
           <div class="dealers_shop__grid_card">
-            <h3>Двери всем</h3>
+            <h3 class="title text_upper color_dark">Двери всем</h3>
             <div class="dealers_shop__location">
               <img src="../images/location.png" />
               <p>г. Воронеж, ул. Донбасская, д. 18а</p>
             </div>
           </div>
           <div class="dealers_shop__grid_card">
-            <h3>Окна Двери36</h3>
+            <h3 class="title text_upper color_dark">Окна Двери36</h3>
             <div class="dealers_shop__location">
               <img src="../images/location.png" />
               <p>
@@ -158,7 +176,7 @@
             </div>
           </div>
           <div class="dealers_shop__grid_card">
-            <h3>Slavdoor</h3>
+            <h3 class="title text_upper color_dark">Slavdoor</h3>
             <div class="dealers_shop__location">
               <img src="../images/location.png" />
               <p>
@@ -167,7 +185,7 @@
             </div>
           </div>
           <div class="dealers_shop__grid_card">
-            <h3>ДизайнСтудия Наталия</h3>
+            <h3 class="title text_upper color_dark">ДизайнСтудия Наталия</h3>
             <div class="dealers_shop__location">
               <img src="../images/location.png" />
               <p>г. Воронеж, ул.Пешестрелецкая 54Б</p>
@@ -182,6 +200,39 @@
       </section>
       <!-- FOOTER -->
     </div>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="offset container">
+        <div class="footer_block">
+          <ul class="footer_menu">
+            <li class="title color_white">Главная</li>
+            <li class="title color_white">Наше производство</li>
+            <li class="title color_white">Каталог</li>
+            <li class="title color_white">Где купить</li>
+            <li class="title color_white">Стать дилером</li>
+            <li class="title color_white">Вакансии</li>
+          </ul>
+        </div>
+        <div class="footer_block">
+          <div class="footer_block__item">
+            <span class="title text_upper color_white"
+              >тел. +7 (473) 258-45-02</span
+            >
+            <a
+              href="mailto:avroradoors@mail.ru"
+              class="title text_upper color_white"
+              >e-mail:avroradoors@mail.ru</a
+            >
+          </div>
+          <div class="footer_block__item">
+            <img src="../images/logo_footer.png" alt="logo" class="logo" />
+            <p class="title text_upper color_white">
+              avroradoors 2023 Все права защищены
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

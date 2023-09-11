@@ -7,5 +7,54 @@ body{
     display: flex;
     flex-direction: column;
     max-width: 980px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
+
+.no-scroll{
+    overflow-y: hidden;
+}
+
+
+@include mediaTablet {
+    .offset{
+        max-width: $tablet_sm;
+    }
+}
+
+@include mediaTablet_sm{
+    .offset{
+        max-width: $phone_xxl;
+    }
+}
+
+@include phone_xxl {
+    .offset{
+        max-width: $phone_lg;
+    }
+}
+
+@include phone_lg {
+    .offset{
+        max-width: $phone_sm;
+    }
+}
+
+@include phone_sm {
+    .offset{
+        max-width: $phone_xs;
+    }
+}
+
+@include phone_xs {
+    .offset{
+        max-width: $phone_xs;
+    }
+}
+
+
+
+
+
+
+
+

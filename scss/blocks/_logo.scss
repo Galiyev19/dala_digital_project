@@ -1,0 +1,10 @@
+.logo{
+    display: flex;
+    max-width: 340px;
+}
+
+@include mediaTablet {
+    .logo{
+        width: 40%;
+    }
+}

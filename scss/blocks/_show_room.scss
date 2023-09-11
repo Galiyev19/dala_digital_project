@@ -14,12 +14,17 @@
         display: flex;
         padding: 40px 0px;
         width: 100%;
+
     }
 
 
     .show_room__row{
         display: flex;
         justify-content: space-between;
+
+        @include mediaTablet{
+            flex-direction: column;
+        }
     }
 
 
@@ -43,14 +48,15 @@
         &:last-child > ul  > ul > li{
             list-style-type: square;
          }
+
+         @include mediaTablet{
+            &:last-child{
+                margin-top:40px;
+            }
+        }
     }
    
 
-    
-
-    .show_room__item > img{
-        width:340px
-    }
    
 
     .info{
@@ -80,10 +86,6 @@
             background-image: url('../../images/phone.png');
         }
         
-        font-weight: 400px;
-        font-size:22px;
-        line-height:34px;
-        text-transform: uppercase;
     }
 
 

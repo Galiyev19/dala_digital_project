@@ -1,0 +1,39 @@
+@mixin mediaTablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+};
+
+@mixin mediaTablet_sm {
+    @media screen and (max-width: $tablet_sm) {
+        @content;
+    }
+};
+
+@mixin phone_xxl {
+    @media screen and (max-width: $phone_xxl) {
+        @content;
+    }
+};
+
+@mixin phone_lg {
+    @media screen and (max-width: $phone_lg) {
+        @content;
+    }
+};
+
+@mixin phone_sm {
+    @media screen and (max-width: $phone_sm) {
+        @content;
+    }
+};
+
+@mixin phone_xs {
+    @media screen and (max-width: $phone_xs) {
+        @content;
+    }
+};
+
+
+
+

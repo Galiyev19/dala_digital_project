@@ -3,3 +3,39 @@
     width:100%;
     margin-top:80px
 }
+
+@include mediaTablet {
+    .google_map > img {
+        max-width: $tablet_sm;
+    }
+}
+
+@include mediaTablet_sm {
+    .google_map > img {
+        max-width: $phone_xxl;
+    }
+}
+
+@include phone_xxl {
+    .google_map > img {
+        max-width: $phone_lg;
+    }
+}
+
+@include phone_lg {
+    .google_map > img {
+        max-width: $phone_sm;
+    }
+}
+
+@include phone_sm {
+    .google_map > img {
+        max-width: $phone_xs;
+    }
+}
+
+@include phone_xs {
+    .google_map > img {
+        max-width: $phone_xs;
+    }
+}
