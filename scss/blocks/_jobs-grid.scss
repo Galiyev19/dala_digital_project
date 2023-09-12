@@ -1,0 +1,23 @@
+.jobs-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 80px;
+    gap: 40px;
+
+    .grid-card{
+        display:flex;
+        flex-direction:column;
+     
+        & > h2{
+            margin-top:10px;
+        }
+    }
+
+    @include mediaTablet{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 2%;
+        .grid-card > img{
+            width:90%;
+        }
+    }
+}

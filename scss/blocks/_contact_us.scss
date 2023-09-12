@@ -72,42 +72,7 @@
 
     
 
-    .info{
-        position: relative;
-        padding-left:32px;
-        margin: 4px 0px;
-        
-        &::before{
-            content: "";
-            
-            position: absolute;
-            top: 0;
-            left: 0;
-            width:28px;
-            height: 28px;
-
-            
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        
-        &__location::before{
-            background-image: url('../../images/location.png');
-        }
-        
-        &__phone::before{
-            background-image: url('../../images/phone.png');
-        }
-
-        &__clock::before{
-            background-image: url('../../images/clock.png');
-        }
-
-        &__mail::before{
-            background-image: url('../../images/mail_g.png');
-        }   
-       
-    }
+    
 }
 
 
