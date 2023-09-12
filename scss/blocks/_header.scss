@@ -47,6 +47,7 @@
         display: flex;
         flex-direction: column;
         align-items:flex-end;
+        text-align: right;
 
         @include mediaTablet {
             display: none;
@@ -58,9 +59,21 @@
         font-weight: 400;
         font-size:26px;
         line-height: 31.2px;
-        text-transform: uppercase;
         color: #686767;
         cursor: pointer;
+        text-transform: uppercase;
+        
+    }
+
+    .head_info__text > a{
+        text-decoration: underline;
+        font-family: $font_main;
+        font-weight: 400;
+        font-size:26px;
+        line-height: 31.2px;
+        color: #686767;
+        cursor: pointer;
+        text-transform: uppercase;
     }
 
     .header__burger-btn{
@@ -134,7 +147,7 @@
             row-gap: 30px;
         }
 
-        .mobile_nav-list > li{
+        .mobile_nav-list > li > a{
             font-family: $font_main;
             font-weight: 400;
             font-size:25px;
@@ -174,23 +187,34 @@
         transition: all .3s ease-in;
         height: 43px;
         width: 100%;
-        border-left: 1px solid #727272;
+        border-left: 1px solid #a0a09f;
+        transition: background-color .3s ease-in-out;
 
         
-        &:hover{
-            background-color: #727272;
-            
+        &:hover {
+            background-color: #a0a09f;    
+            color: $white
         }
 
-        &:hover a > p{
+        &:hover  >a {
             color: $white;
         }
 
         &:nth-child(1){
             border-left: none;
         }
+
+        &:nth-child(5){
+            border-right: 1px solid #a0a09f;;
+        }
+        
         &:nth-child(6){
             border-left: none;
+        }
+
+        &__active{
+            background-color: #a0a09f;
+            color: $white
         }
     }
 
@@ -199,10 +223,11 @@
         padding: 0px 10px;
     }
 
-    .nav_list_menu_item > a {
+    .nav_list_menu_item  > a {
         font-family: $font_main;
         font-weight: 400;
         font-size:21px;
+        color: $dark-text;
     }
  
     

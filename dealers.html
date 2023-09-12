@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../images/logo.svg" />
+    <link rel="icon" href="../images/logo.png" />
     <title>AVRORADOORS</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -13,22 +13,41 @@
       <header class="header">
         <div class="head_container">
           <a href="dealers.html">
-            <img src="../images/logo.svg" class="logo" />
+            <img src="../images/logo.png" alt="logo" class="logo" />
           </a>
+
           <!-- CONTACT INFO -->
           <div class="head_info">
-            <span class="head_info__text">тел: +7 (473) 258-45-02</span>
-            <span class="head_info__text">e-mail: avroradoors@mail.ru</span>
+            <span class="head_info__text">
+              тел: +7 (473) 258-45-02<br />
+              e-mail:
+              <a href="mailto:avroradoors@mail.ru">avroradoors@mail.ru</a>
+            </span>
+            <!-- <span class="head_info__text">ТЕЛ: +7 (473) 258-45-02</span>
+            <span class="head_info__text">e-mail: avroradoors@mail.ru</span> -->
           </div>
+
           <!-- MOBILE NAV MENU -->
           <nav class="mobile_nav">
             <ul class="mobile_nav-list">
-              <li>ГЛАВНАЯ</li>
-              <li>НАШЕ ПРОИЗВОДСТВО</li>
-              <li>КАТАЛОГ</li>
-              <li>ГДЕ КУПИТЬ</li>
-              <li>СТАТЬ ЛИДЕРОМ</li>
-              <li>ВАКАНСИИ</li>
+              <li>
+                <a href="">ГЛАВНАЯ</a>
+              </li>
+              <li>
+                <a href="">НАШЕ ПРОИЗВОДСТВО</a>
+              </li>
+              <li>
+                <a href="">КАТАЛОГ</a>
+              </li>
+              <li>
+                <a href="dealers.html">ГДЕ КУПИТЬ</a>
+              </li>
+              <li>
+                <a href="contact.html">СТАТЬ ДИЛЕРОМ</a>
+              </li>
+              <li>
+                <a href="#">ВАКАНСИИ</a>
+              </li>
             </ul>
           </nav>
 
@@ -42,22 +61,22 @@
         <nav class="nav_menu">
           <ul class="nav_list_menu">
             <li class="nav_list_menu_item">
-              <a>ГЛАВНАЯ</a>
+              <a href="#">ГЛАВНАЯ</a>
             </li>
             <li class="nav_list_menu_item">
-              <a>НАШЕ ПРОИЗВОДСТВО</a>
+              <a href="#">НАШЕ ПРОИЗВОДСТВО</a>
             </li>
             <li class="nav_list_menu_item">
-              <a>КАТАЛОГ</a>
+              <a href="#">КАТАЛОГ</a>
             </li>
             <li class="nav_list_menu_item">
-              <a>ГДЕ КУПИТЬ</a>
+              <a href="dealers.html">ГДЕ КУПИТЬ</a>
             </li>
             <li class="nav_list_menu_item">
-              <a>СТАТЬ ЛИДЕРОМ</a>
+              <a href="contact.html">СТАТЬ ДИЛЕРОМ</a>
             </li>
             <li class="nav_list_menu_item">
-              <a>ВАКАНСИИ</a>
+              <a href="#">ВАКАНСИИ</a>
             </li>
           </ul>
         </nav>
@@ -69,7 +88,7 @@
         <div class="container">
           <div class="show_room__row">
             <div class="show_room__item">
-              <img src="../images/logo.svg" class="logo" alt="logo" />
+              <img src="../images/logo.png" class="logo" alt="logo" />
               <a
                 href="#section-map"
                 class="info info__location title color_dark"
@@ -193,10 +212,9 @@
           </div>
         </div>
       </section>
-      <!-- GOOGLE MAPS -->
-      <!-- Пока что фото позже логику -->
+      <!-- MAP -->
       <section class="google_map">
-        <img src="../images/google_map.png" />
+        <div id="map" style="width: 980px; height: 405px"></div>
       </section>
       <!-- FOOTER -->
     </div>
@@ -232,6 +250,11 @@
         </div>
       </div>
     </footer>
+
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=b8509de4-2f2d-460d-b2ed-cf552003e7d7&lang=ru_RU"
+      type="text/javascript"
+    ></script>
 
     <script src="./js/main.js"></script>
   </body>

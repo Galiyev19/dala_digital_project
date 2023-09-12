@@ -57,8 +57,6 @@
     }
    
 
-   
-
     .info{
         position: relative;
         padding-left:32px;
@@ -85,12 +83,27 @@
         &__phone::before{
             background-image: url('../../images/phone.png');
         }
-        
+
+        &__clock::before{
+            background-image: url('../../images/clock.png');
+        }
+
+        &__mail::before{
+            background-image: url('../../images/mail_g.png');
+        }         
     }
 
 
 
     .show_room__item > p {
+        font-family: $font-accent;
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 22.4px;
+        color: $dark-text;
+    }
+
+    .show_room__item > ul {
         font-family: $font-accent;
         font-weight: 350;
         font-size: 16px;
