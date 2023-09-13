@@ -28,6 +28,10 @@
             @include mediaTablet{
                 align-items: start;
             }
+
+            & > p {
+                margin-top:10px;
+            }
         }
     }
 
@@ -40,6 +44,12 @@
     .footer_menu{
         list-style: none;
         padding:0
+        
+    }
+
+    .footer_menu  > li > a{
+        cursor: pointer;
+        color: $white;
     }
 
     // .footer_menu__item{

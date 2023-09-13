@@ -459,6 +459,9 @@ body {
     align-items: start;
   }
 }
+.footer .footer_block__item > p {
+  margin-top: 10px;
+}
 @media screen and (max-width: 996px) {
   .footer .footer_block:first-child {
     margin-bottom: 40px;
@@ -467,6 +470,10 @@ body {
 .footer .footer_menu {
   list-style: none;
   padding: 0;
+}
+.footer .footer_menu > li > a {
+  cursor: pointer;
+  color: #FFFFFF;
 }
 
 .google_map {
