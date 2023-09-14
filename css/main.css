@@ -604,16 +604,41 @@ body {
   height: 46px;
   margin-bottom: 20px;
 }
+.contact-block__form .input_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact-block__form .errorLabel {
+  margin-bottom: 8px;
+  margin-top: 4px;
+  color: red;
+}
 .contact-block__form .contact-form__input {
   background-color: #FFFFFF;
   padding: 12px 16px;
-  width: 50%;
+  width: 100%;
+  border: none;
+  outline: none;
 }
 .contact-block__form .contact-form__input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22.4px;
+}
+.contact-block__form .contact-form__input:focus {
+  border: 1px solid #1D1D1B;
+}
+.contact-block__form .contact-form__input._error {
+  border: 1px solid red;
+}
+.contact-block__form .email_error_text {
+  display: none;
+  color: red;
+  margin: 4px 0px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 16px;
 }
 .contact-block__form .contact-form__btn {
   display: flex;

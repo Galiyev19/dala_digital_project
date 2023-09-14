@@ -143,23 +143,52 @@
       <!-- CONTACT FORM -->
       <section class="contact-block__form">
         <h1 class="title color_dark font_w_700 text_upper">Стать дилером</h1>
-        <form class="contact-form">
+        <form class="contact-form" action="">
           <div class="contact-form__item">
-            <input class="contact-form__input" placeholder="Телефон*" />
-            <input
-              class="contact-form__input"
-              placeholder="Как к вам обращаться?"
-            />
+            <div class="input_box">
+              <input
+                class="contact-form__input _req"
+                placeholder="Телефон*"
+                id="phone"
+                name="phone"
+                type="text"
+                data-required="true"
+              />
+            </div>
+            <div class="input_box">
+              <input
+                class="contact-form__input _req"
+                placeholder="Как к вам обращаться?"
+                id="name"
+                name="name"
+                type="text"
+                data-required="true"
+                data-min-length="3"
+              />
+            </div>
           </div>
           <div class="contact-form__item">
-            <input class="contact-form__input" placeholder="Эл. почта" />
-            <input
-              class="contact-form__input"
-              placeholder="Добавить сообщение"
-            />
+            <div class="input_box">
+              <input
+                class="contact-form__input _req _email"
+                placeholder="Эл. почта"
+                id="email"
+                name="email"
+                type="emai"
+                data-required="true"
+              />
+            </div>
+            <div class="input_box">
+              <input
+                class="contact-form__input"
+                placeholder="Добавить сообщение"
+                id="message"
+                name="message"
+              />
+            </div>
           </div>
           <div class="contact-form__item">
-            <button class="contact-form__btn title">
+            <button class="contact-form__btn title" type="submit">
               отправить<img src="./images/send_btn.png" />
             </button>
             <div class="confirm_text">
