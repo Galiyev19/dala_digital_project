@@ -62,7 +62,10 @@ function validation(form) {
     }
 
     if (input.value.length < input.dataset.minLength) {
-      createError(input, `Минимально кол-во символов: ${input.dataset.minLength}`);
+      createError(
+        input,
+        `Минимально кол-во символов: ${input.dataset.minLength}`
+      );
       result = false;
     }
   }
@@ -76,8 +79,10 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (validation(form) === true) {
-    alert("Успешно");
-
-    form.reset();
+    form.classList.add("__sending");
+    setTimeout(() => {
+      form.classList.remove("__sending");
+    }, 3000);
+  } else {
   }
 });

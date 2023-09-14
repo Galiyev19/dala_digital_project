@@ -596,6 +596,23 @@ body {
   width: 100%;
   margin-top: 20px;
 }
+.contact-block__form .contact-form__body::after {
+  z-index: 1000000;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.9) url("../../images/Spinning arrows.gif") center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+.contact-block__form .contact-form.__sending::after {
+  opacity: 1;
+  visibility: visible;
+}
 .contact-block__form .contact-form__item {
   display: flex;
   gap: 16px;
