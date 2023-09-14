@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+
+@font-face{
+    font-family:'Bebas';
+    src: url('../../fonts/Bebas\ Neue.ttf') format('ttf');
+}
+
 body{
-    font-family: $font-main;
+    font-family: 'Bebas',sans-serif;
     background-color: $white;
 }
 

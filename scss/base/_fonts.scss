@@ -1,9 +1,12 @@
-// @font-face{
-//     font-family:'Bebas', sans-serif;
-//     src: url('../../fonts/BebasNeue-Regular.woff') format('woff');
-// }
+@font-face{
+    font-family:'Bebas';
+    font-weight: 400;
+    src: url('../../fonts/Bebas_Neue.woff') format('woff'),
+    url('../../fonts/Bebas_Neue.woff2') format('woff2');
+}
 
 @font-face{
     font-family: "Bahnschrift";
-    src: url('../../fonts/Bahnschrift.ttf') format('ttf');
+    src: url('../../fonts/Bahnschrift.woff') format('woff'),
+    url('../../fonts/Bahnschrift.woff2') format('woff2');
 }

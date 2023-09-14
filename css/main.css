@@ -1,5 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@font-face {
+  font-family: "Bebas";
+  font-weight: 400;
+  src: url("../../fonts/Bebas_Neue.woff") format("woff"), url("../../fonts/Bebas_Neue.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../../fonts/Bahnschrift.woff") format("woff"), url("../../fonts/Bahnschrift.woff2") format("woff2");
+}
 * {
   margin: 0px;
   border: none;
@@ -21,11 +29,11 @@ a:hover {
 }
 
 @font-face {
-  font-family: "Bahnschrift";
-  src: url("../../fonts/Bahnschrift.ttf") format("ttf");
+  font-family: "Bebas";
+  src: url("../../fonts/Bebas Neue.ttf") format("ttf");
 }
 body {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   background-color: #FFFFFF;
 }
 
@@ -72,10 +80,10 @@ body {
   }
 }
 .title {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 25px;
+  font-family: "Bebas", sans-serif;
+  font-size: 25.06px;
   font-weight: 400;
-  line-height: 37px;
+  line-height: 37.63px;
 }
 
 .color_brown {
@@ -120,6 +128,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding-left: 2px;
 }
 .header .header_mobile {
   position: fixed;
@@ -152,6 +161,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
+  padding: 22px 0px 5px 0px;
 }
 @media screen and (max-width: 996px) {
   .header .head_info {
@@ -159,7 +169,7 @@ body {
   }
 }
 .header .head_info__text {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 31.2px;
@@ -169,7 +179,7 @@ body {
 }
 .header .head_info__text > a {
   text-decoration: underline;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 31.2px;
@@ -233,7 +243,7 @@ body {
   row-gap: 30px;
 }
 .header .mobile_nav .mobile_nav-list > li > a {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-weight: 400;
   font-size: 25px;
   line-height: 37px;
@@ -271,7 +281,7 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 .header .nav_list_menu_item:hover {
-  background-color: #a0a09f;
+  background-color: rgb(96, 94, 94);
   color: #FFFFFF;
 }
 .header .nav_list_menu_item:hover > a {
@@ -295,9 +305,10 @@ body {
   padding: 0px 10px;
 }
 .header .nav_list_menu_item > a {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 25px;
+  line-height: 43px;
   color: #1D1D1B;
 }
 
@@ -379,7 +390,19 @@ body {
   line-height: 22.4px;
   color: #1D1D1B;
 }
-.show_room .show_room__item > ul {
+.show_room .show_room__item__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.show_room .show_room__item__list > span {
+  font-family: "Bahnschrift", sans-serif;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #1D1D1B;
+}
+.show_room .show_room__item__list > ul {
   font-family: "Bahnschrift", sans-serif;
   font-weight: 350;
   font-size: 16px;
@@ -397,8 +420,9 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 20px;
-  grid-column-gap: 40px;
+  grid-column-gap: 58px;
   grid-row-gap: 40px;
+  width: 904px;
 }
 @media screen and (max-width: 768px) {
   .dealers_shop .dealers_shop__grid {
@@ -408,16 +432,17 @@ body {
 .dealers_shop .dealers_shop__grid_card {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 423px;
 }
 .dealers_shop .dealers_shop__location {
   display: flex;
   width: 100%;
-  margin-top: 12px;
+  padding: 3px 3px 0px 3px;
+  gap: 4px;
 }
 .dealers_shop .dealers_shop__location > img {
-  height: 28px;
-  width: 28px;
+  height: 21px;
+  width: 21px;
 }
 .dealers_shop .dealers_shop__location > p {
   font-family: "Bahnschrift", sans-serif;
@@ -425,6 +450,7 @@ body {
   line-height: 22.4px;
   font-weight: 350;
   margin-left: 4px;
+  padding-right: 18px;
 }
 
 .footer {
@@ -514,7 +540,7 @@ body {
 }
 .logo {
   display: flex;
-  max-width: 340px;
+  max-width: 350px;
 }
 
 @media screen and (max-width: 996px) {
@@ -538,7 +564,8 @@ body {
   display: flex;
   justify-content: space-between;
   border: 1px solid #591413;
-  width: 49%;
+  width: 486px;
+  height: 44px;
 }
 .contact-us .social-links__item {
   display: flex;
@@ -561,11 +588,14 @@ body {
   }
   .contact-us .social-links {
     margin-top: 20px;
-    min-width: 100% !important;
+    width: 100% !important;
   }
 }
 .contact-us .pad_l {
-  padding-left: 35px;
+  padding-left: 38px;
+}
+.contact-us .mr_0 {
+  margin-bottom: 0 !important;
 }
 .contact-us .contact-us__list {
   display: flex;
@@ -589,6 +619,8 @@ body {
   width: 100%;
   background-color: #cccccc;
   padding: 40px;
+  margin-top: 80px;
+  height: 296px;
 }
 .contact-block__form .contact-form {
   display: flex;
@@ -620,6 +652,9 @@ body {
   width: 100%;
   height: 46px;
   margin-bottom: 20px;
+}
+.contact-block__form .contact-form__item:last-child {
+  margin-bottom: 0;
 }
 .contact-block__form .input_box {
   display: flex;
@@ -654,7 +689,7 @@ body {
   display: none;
   color: red;
   margin: 4px 0px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-size: 16px;
 }
 .contact-block__form .contact-form__btn {
@@ -699,6 +734,11 @@ body {
   }
 }
 
+@media screen and (max-width: 996px) {
+  .contact-block__form {
+    height: auto !important;
+  }
+}
 .jobs_head_container {
   display: flex;
   flex-direction: column;
@@ -712,7 +752,7 @@ body {
   justify-content: space-between;
 }
 .jobs_head_container .jobs_contact_info > p {
-  width: 40%;
+  width: 50%;
   font-family: "Bahnschrift", sans-serif;
   font-weight: 350;
   font-size: 16px;
@@ -739,8 +779,7 @@ body {
 
 .info {
   position: relative;
-  padding-left: 32px;
-  margin: 4px 0px;
+  padding-left: 38px;
 }
 .info::before {
   content: "";

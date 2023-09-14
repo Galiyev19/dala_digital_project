@@ -4,6 +4,8 @@
     width:100%;
     margin-top: 34px;
 
+
+
     .contact-us__social{
         display:flex;
         align-items:center;
@@ -15,7 +17,8 @@
         display:flex;
         justify-content: space-between;
         border: 1px solid $brown-text;  
-        width: 49%;
+        width: 486px;
+        height: 44px;
     }
 
     .social-links__item{
@@ -43,13 +46,16 @@
         
         .social-links{
             margin-top: 20px;
-            min-width: 100% !important;
+            width: 100% !important;
         }
     }
 
 
     .pad_l{
-        padding-left: 35px;
+        padding-left: 38px;
+    }
+    .mr_0{
+        margin-bottom: 0 !important;
     }
 
     .contact-us__list{
@@ -70,7 +76,7 @@
         }
     }
 
-    
+   
 
     
 }

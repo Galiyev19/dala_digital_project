@@ -11,7 +11,7 @@
         justify-content: space-between;
 
         & > p {
-            width:40%;
+            width:50%;
             font-family: $font-accent;
             font-weight: 350;
             font-size: 16px;
@@ -48,8 +48,7 @@
 
 .info{
     position: relative;
-    padding-left:32px;
-    margin: 4px 0px;
+    padding-left:38px;
     
     &::before{
         content: "";
