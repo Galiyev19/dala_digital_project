@@ -7,7 +7,8 @@
     .container{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: flex-end;
+        justify-content: flex-end;
         width: 100%;
 
         @include mediaTablet{
@@ -26,14 +27,19 @@
             align-items: flex-end;
 
             @include mediaTablet{
-                align-items: start;
+               
             }
 
             & > p {
                 margin-top:10px;
+                padding-right: 315px;
+                color: #8e8e8e;
             }
         }
     }
+
+
+
 
     @include mediaTablet{
         .footer_block:first-child{
@@ -51,6 +57,8 @@
         cursor: pointer;
         color: $white;
     }
+
+
 
     // .footer_menu__item{
     //     font-family:$font-main;

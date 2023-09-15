@@ -15,10 +15,13 @@
         width: 904px;
 
 
-        
+        @include mediaTablet{
+            width: 100%;
+        }
 
         @include mediaTablet_sm{
             grid-template-columns: repeat(1,1fr);
+           
         }
 
     }
@@ -27,7 +30,13 @@
         display:flex;
         flex-direction: column;
         max-width: 423px;
+
+        @include mediaTablet{
+            max-width: 100%;
+        }
     }
+
+    
 
     .dealers_shop__location{
         display:flex;

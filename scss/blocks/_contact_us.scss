@@ -40,6 +40,7 @@
 
     @include mediaTablet_sm{
         .contact-us__social{
+            align-items: flex-start;
             flex-direction: column;
             text-align: center;
         }

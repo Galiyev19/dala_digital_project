@@ -249,6 +249,9 @@ body {
   line-height: 37px;
   color: #FFFFFF;
 }
+.header .mobile_nav .mobile_nav__item-active {
+  color: #591413 !important;
+}
 .header .nav_menu {
   display: flex;
   width: 100%;
@@ -424,6 +427,11 @@ body {
   grid-row-gap: 40px;
   width: 904px;
 }
+@media screen and (max-width: 996px) {
+  .dealers_shop .dealers_shop__grid {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .dealers_shop .dealers_shop__grid {
     grid-template-columns: repeat(1, 1fr);
@@ -433,6 +441,11 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 423px;
+}
+@media screen and (max-width: 996px) {
+  .dealers_shop .dealers_shop__grid_card {
+    max-width: 100%;
+  }
 }
 .dealers_shop .dealers_shop__location {
   display: flex;
@@ -462,7 +475,8 @@ body {
 .footer .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: flex-end;
+  justify-content: flex-end;
   width: 100%;
 }
 @media screen and (max-width: 996px) {
@@ -480,13 +494,10 @@ body {
   flex-direction: column;
   align-items: flex-end;
 }
-@media screen and (max-width: 996px) {
-  .footer .footer_block__item {
-    align-items: start;
-  }
-}
 .footer .footer_block__item > p {
   margin-top: 10px;
+  padding-right: 315px;
+  color: #8e8e8e;
 }
 @media screen and (max-width: 996px) {
   .footer .footer_block:first-child {
@@ -545,7 +556,7 @@ body {
 
 @media screen and (max-width: 996px) {
   .logo {
-    width: 40%;
+    width: 80%;
   }
 }
 .contact-us {
@@ -583,6 +594,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .contact-us .contact-us__social {
+    align-items: flex-start;
     flex-direction: column;
     text-align: center;
   }
