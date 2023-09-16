@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @font-face {
   font-family: "Bebas";
-  font-weight: 400;
-  src: url("../../fonts/Bebas_Neue.woff") format("woff"), url("../../fonts/Bebas_Neue.woff2") format("woff2");
+  src: url("../../fonts/OFONT.RU_BEBAS NEUE (1).TTF");
+}
+@font-face {
+  font-family: "Bebas Bold";
+  src: url("../../fonts/BEBAS_NEUE_BOLD.TTF");
 }
 @font-face {
   font-family: "Bahnschrift";
@@ -43,6 +46,7 @@ body {
   max-width: 980px;
   margin: 0 auto;
   transition: opacity 0.5s ease-in-out;
+  padding-top: 40px;
 }
 
 .no-scroll {
@@ -86,6 +90,13 @@ body {
   line-height: 37.63px;
 }
 
+.title_bold {
+  font-family: "Bebas Bold", sans-serif;
+  font-size: 25.06px;
+  font-weight: 700;
+  line-height: 37.63px;
+}
+
 .color_brown {
   color: #591413;
 }
@@ -124,11 +135,11 @@ body {
 }
 .header .head_container {
   display: flex;
-  padding-top: 40px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   padding-left: 2px;
+  max-height: 79px;
 }
 .header .header_mobile {
   position: fixed;
@@ -176,6 +187,9 @@ body {
   color: #686767;
   cursor: pointer;
   text-transform: uppercase;
+}
+.header .head_info__text:last-child {
+  margin-top: -5px;
 }
 .header .head_info__text > a {
   text-decoration: underline;
@@ -278,7 +292,7 @@ body {
   background-color: transparent;
   cursor: pointer;
   transition: all 0.3s ease-in;
-  height: 43px;
+  height: 44px;
   width: 100%;
   border-left: 1px solid #a0a09f;
   transition: background-color 0.3s ease-in-out;
@@ -310,8 +324,8 @@ body {
 .header .nav_list_menu_item > a {
   font-family: "Bebas", sans-serif;
   font-weight: 400;
-  font-size: 25px;
-  line-height: 43px;
+  font-size: 25.06px;
+  line-height: 37.63px;
   color: #1D1D1B;
 }
 
@@ -328,7 +342,7 @@ body {
 }
 .show_room .container {
   display: flex;
-  padding: 40px 0px;
+  padding: 30px 0 32px 0px;
   width: 100%;
 }
 .show_room .show_room__row {
@@ -345,6 +359,17 @@ body {
   flex-direction: column;
   width: 100%;
 }
+.show_room .show_room__item:nth-child(1) {
+  width: 35%;
+}
+.show_room .show_room__item:nth-child(2) {
+  width: 50%;
+}
+.show_room .show_room__item > img {
+  width: 340px;
+  height: 75px;
+  margin-bottom: 12px;
+}
 .show_room .show_room__item:last-child > ul {
   margin-top: 16px;
 }
@@ -357,6 +382,10 @@ body {
 @media screen and (max-width: 996px) {
   .show_room .show_room__item:last-child {
     margin-top: 40px;
+    width: 100%;
+  }
+  .show_room .show_room__item:first-child {
+    width: 100%;
   }
 }
 .show_room .info {
@@ -378,7 +407,7 @@ body {
   background-image: url("../../images/location.png");
 }
 .show_room .info__phone::before {
-  background-image: url("../../images/phone.png");
+  background-image: url("../../images/phone_1.png");
 }
 .show_room .info__clock::before {
   background-image: url("../../images/clock.png");
@@ -392,6 +421,8 @@ body {
   font-size: 16px;
   line-height: 22.4px;
   color: #1D1D1B;
+  margin-top: 10px;
+  margin-left: -9px;
 }
 .show_room .show_room__item__list {
   display: flex;
@@ -404,6 +435,8 @@ body {
   font-size: 16px;
   line-height: 22.4px;
   color: #1D1D1B;
+  margin-top: 2px;
+  margin-left: -9px;
 }
 .show_room .show_room__item__list > ul {
   font-family: "Bahnschrift", sans-serif;
@@ -411,6 +444,7 @@ body {
   font-size: 16px;
   line-height: 22.4px;
   color: #1D1D1B;
+  padding-left: 15px;
 }
 
 .dealers_shop {
@@ -441,6 +475,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 423px;
+  max-height: 82px;
 }
 @media screen and (max-width: 996px) {
   .dealers_shop .dealers_shop__grid_card {
@@ -470,12 +505,10 @@ body {
   display: flex;
   background-color: #727272;
   min-height: 305px;
-  padding: 40px 0px;
 }
 .footer .container {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
   justify-content: flex-end;
   width: 100%;
 }
@@ -487,7 +520,6 @@ body {
 .footer .footer_block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .footer .footer_block__item {
   display: flex;
@@ -498,6 +530,14 @@ body {
   margin-top: 10px;
   padding-right: 315px;
   color: #8e8e8e;
+}
+@media screen and (max-width: 414px) {
+  .footer .footer_block__item > p {
+    padding-right: 0px !important;
+  }
+}
+.footer .footer_block__item:first-child {
+  margin-bottom: 25px;
 }
 @media screen and (max-width: 996px) {
   .footer .footer_block:first-child {
@@ -630,7 +670,7 @@ body {
   flex-direction: column;
   width: 100%;
   background-color: #cccccc;
-  padding: 40px;
+  padding: 32px 40px 40px;
   margin-top: 80px;
   height: 296px;
 }
@@ -638,7 +678,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .contact-block__form .contact-form__body::after {
   z-index: 1000000;
@@ -684,6 +724,10 @@ body {
   width: 100%;
   border: none;
   outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
 }
 .contact-block__form .contact-form__input::placeholder {
   font-family: "Montserrat", sans-serif;
@@ -819,7 +863,7 @@ body {
 .jobs-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 80px;
+  margin: 80px 0px;
   gap: 40px;
 }
 .jobs-grid .grid-card {

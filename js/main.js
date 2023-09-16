@@ -30,7 +30,6 @@ const setActiveButtonMobile = () => {
   const links = document.querySelectorAll(".mobile_nav__item");
 
   const currentPage = window.location.href;
-  console.log(links[4].children[0]);
 
   links.forEach((item) => {
     if (item.children[0].href === currentPage) {

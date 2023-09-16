@@ -2,12 +2,10 @@
     display: flex;
     background-color: $footer-bg;
     min-height: 305px;
-    padding: 40px 0px;
 
     .container{
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
         justify-content: flex-end;
         width: 100%;
 
@@ -19,23 +17,28 @@
     .footer_block{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         
         &__item{
             display: flex;
             flex-direction: column;
             align-items: flex-end;
 
-            @include mediaTablet{
-               
-            }
-
             & > p {
                 margin-top:10px;
                 padding-right: 315px;
                 color: #8e8e8e;
+
+                @include phone_sm{
+                    padding-right: 0px !important;
+                }
             }
+
+            &:first-child{
+                margin-bottom: 25px;
+            }
+        
         }
+
     }
 
 
