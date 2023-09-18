@@ -1,6 +1,8 @@
 //SEND DATA FROM FORM
+const form = document.querySelector("form");
 
 function validation(form) {
+  //REMOVE ERROR FROM PAGE
   function removeError(input) {
     const parent = input.parentNode;
 
@@ -10,13 +12,14 @@ function validation(form) {
     }
   }
 
+  //CREATE ERROR IM PAGE
   function createError(input, text) {
     const parent = input.parentNode;
 
-    const errorLabel = document.createElement("label");
-    errorLabel.classList.add("errorLabel");
-    errorLabel.textContent = text;
-    parent.append(errorLabel);
+    // const errorLabel = document.createElement("label");
+    // errorLabel.classList.add("errorLabel");
+    // errorLabel.textContent = text;
+    // parent.append(errorLabel);
 
     input.classList.add("_error");
   }
@@ -46,16 +49,32 @@ function validation(form) {
   return result;
 }
 
-const form = document.querySelector("form");
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (validation(form) === true) {
+    const formData = new FormData(form);
     form.classList.add("__sending");
-    setTimeout(() => {
-      form.classList.remove("__sending");
-    }, 3000);
-  } else {
+
+    const res = Object.fromEntries(formData);
+    const payload = JSON.stringify(res);
+
+    // for (item of formData) {
+    //   console.log(item[0], item[1]);
+    // }
+
+    fetch("https://httpbin.org/post", {
+      method: "POST",
+      body: payload,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then(() => {
+        form.classList.remove("__sending");
+        form.reset();
+      })
+      .catch((err) => err);
   }
 });
