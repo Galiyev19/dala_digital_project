@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@font-face {
-  font-family: "Bebas";
-  src: url("../../fonts/OFONT.RU_BEBAS NEUE (1).TTF");
-}
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
 @font-face {
   font-family: "Bebas Bold";
   src: url("../../fonts/BEBAS_NEUE_BOLD.TTF");
@@ -31,12 +28,8 @@ a:hover {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "Bebas";
-  src: url("../../fonts/Bebas Neue.ttf") format("ttf");
-}
 body {
-  font-family: "Bebas", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   background-color: #FFFFFF;
 }
 
@@ -84,7 +77,7 @@ body {
   }
 }
 .title {
-  font-family: "Bebas", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 25.06px;
   font-weight: 400;
   line-height: 37.63px;
@@ -185,7 +178,7 @@ body {
   }
 }
 .header .head_info__text {
-  font-family: "Bebas", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 31.2px;
@@ -198,7 +191,7 @@ body {
 }
 .header .head_info__text > a {
   text-decoration: underline;
-  font-family: "Bebas", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 31.2px;
@@ -262,7 +255,7 @@ body {
   row-gap: 30px;
 }
 .header .mobile_nav .mobile_nav-list > li > a {
-  font-family: "Bebas", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: 25px;
   line-height: 37px;
@@ -327,7 +320,7 @@ body {
   padding: 0px 10px;
 }
 .header .nav_list_menu_item > a {
-  font-family: "Bebas", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: 25.06px;
   line-height: 37.63px;
@@ -750,7 +743,7 @@ body {
   display: none;
   color: red;
   margin: 4px 0px;
-  font-family: "Bebas", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 16px;
 }
 .contact-block__form .contact-form__btn {
