@@ -1,19 +1,15 @@
-// @font-face{
-//     font-family:'Bebas';
-//     font-weight: 400;
-//     src: url('../../fonts/Bebas_Neue.woff') format('woff'),
-//     url('../../fonts/Bebas_Neue.woff2') format('woff2');
-// }
-
-// @font-face{
-//     font-family:'Bebas';    
-//     src: url('../../fonts/OFONT.RU_BEBAS\ NEUE\ \(1\).TTF')
-// }
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face{
-    font-family:'Bebas Bold';    
-    src: url('../../fonts/BEBAS_NEUE_BOLD.TTF')
+    font-family:'Bebas Neue', sans-serif;   
+    src: url('../../fonts/OFONT.RU_BEBASNEUE\(1\).TTF') 
 }
+
+// @font-face{
+//     font-family:'Bebas Bold';    
+//     src: url('../../fonts/BEBAS_NEUE_BOLD.TTF')
+// }
 
 @font-face{
     font-family: "Bahnschrift";

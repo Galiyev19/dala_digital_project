@@ -7,7 +7,7 @@ function validation(form) {
     const parent = input.parentNode;
 
     if (input.classList.contains("_error")) {
-      parent.querySelector(".errorLabel").remove();
+      // parent.querySelector(".errorLabel").remove();
       input.classList.remove("_error");
     }
   }
@@ -49,12 +49,15 @@ function validation(form) {
   return result;
 }
 
+const popUp = document.querySelector(".popUp");
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (validation(form) === true) {
     const formData = new FormData(form);
-    form.classList.add("__sending");
+    // form.classList.add("__sending");
+    popUp.style.display = "flex";
 
     const res = Object.fromEntries(formData);
     const payload = JSON.stringify(res);
@@ -72,8 +75,11 @@ form.addEventListener("submit", (e) => {
     })
       .then((res) => res.json())
       .then(() => {
-        form.classList.remove("__sending");
-        form.reset();
+        // form.classList.remove("__sending");
+        setTimeout(() => {
+          popUp.style.display = "none";
+          form.reset();
+        }, 2000);
       })
       .catch((err) => err);
   }

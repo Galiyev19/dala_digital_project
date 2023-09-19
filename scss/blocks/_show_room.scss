@@ -29,12 +29,15 @@
         
     }
 
+  
+
 
     .show_room__item{
         display: flex;
         flex-direction: column;
         width: 100%;
 
+    
         &:nth-child(1){
             width: 35%;
 
@@ -75,8 +78,11 @@
             }
 
         }
+
+       
     }
 
+   
     
    
 

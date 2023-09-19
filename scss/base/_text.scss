@@ -1,12 +1,15 @@
 .title{
-    font-family: $font-main;
+    // font-family: $font-main;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: $font-size-main;
     font-weight: 400;
     line-height: $line-height-main;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .title_bold{
-    font-family: $font-main__bold;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: $font-size-main;
     font-weight: 700;
     line-height: $line-height-main;
