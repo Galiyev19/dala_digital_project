@@ -832,6 +832,7 @@ a:hover {
   }
   .jobs_head_container .jobs_contact_info_item {
     align-items: flex-start;
+    text-align: left;
   }
 }
 
@@ -897,6 +898,32 @@ a:hover {
   transition: all 0.3s ease-in;
 }
 .popUp-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  background-color: #CCC;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  border-radius: 20px;
+  color: #1d1d1b;
+}
+
+.popUp_error {
+  position: fixed;
+  background-color: rgba(32, 33, 37, 0.64);
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  inset: 0px;
+  display: none;
+  transition: all 0.3s ease-in;
+}
+.popUp_error-content {
   position: absolute;
   display: flex;
   align-items: center;

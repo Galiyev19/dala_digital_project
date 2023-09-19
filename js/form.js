@@ -50,6 +50,7 @@ function validation(form) {
 }
 
 const popUp = document.querySelector(".popUp");
+const popUpError = document.querySelector(".popUp_error");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -81,6 +82,11 @@ form.addEventListener("submit", (e) => {
           form.reset();
         }, 2000);
       })
-      .catch((err) => err);
+      .catch((err) => {
+        popUpError.style.display = "flex";
+        setTimeout(() => {
+          popUpError.style.display = "none";
+        }, 2000);
+      });
   }
 });
