@@ -8,6 +8,10 @@
   font-family: "Bahnschrift";
   src: url("../../fonts/Bahnschrift.woff") format("woff"), url("../../fonts/Bahnschrift.woff2") format("woff2");
 }
+body {
+  margin: 0;
+}
+
 * {
   margin: 0px;
   border: none;
