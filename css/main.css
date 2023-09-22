@@ -15,12 +15,8 @@ body {
 * {
   margin: 0px;
   border: none;
-}
-
-*,
-*::before,
-*::after {
   box-sizing: border-box;
+  padding: 0px;
 }
 
 /* Links */
@@ -163,8 +159,8 @@ a:hover {
 }
 .header .header_mobile .header__burger-btn {
   position: fixed;
-  top: 40px;
-  right: 50px;
+  top: 60px;
+  right: 30px;
 }
 .header .head_info {
   display: flex;
@@ -595,7 +591,7 @@ a:hover {
 
 @media screen and (max-width: 996px) {
   .logo {
-    width: 80%;
+    width: 70%;
   }
 }
 .contact-us {
