@@ -5,6 +5,16 @@
 
 @include mediaTablet {
     .logo{
-        width: 70%;
+        width: 276.7px;
+        height:62.46px
     }
 }
+
+
+@include phone_lg{
+    .logo{
+        width:196px;
+        height: 44.24px;
+    }
+}
+

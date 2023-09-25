@@ -24,18 +24,7 @@
 
 @include phone_lg {
     .google_map > img {
-        max-width: $phone_sm;
-    }
-}
-
-@include phone_sm {
-    .google_map > img {
         max-width: $phone_xs;
     }
 }
 
-@include phone_xs {
-    .google_map > img {
-        max-width: $phone_xs;
-    }
-}

@@ -33,21 +33,11 @@
 
 @include phone_lg {
     .offset{
-        max-width: $phone_sm;
-    }
-}
-
-@include phone_sm {
-    .offset{
         max-width: $phone_xs;
     }
 }
 
-@include phone_xs {
-    .offset{
-        max-width: $phone_xs;
-    }
-}
+
 
 
 

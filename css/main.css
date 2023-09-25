@@ -64,13 +64,13 @@ a:hover {
   font-weight: 700;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 460px) {
   .title {
     font-size: 20px;
     line-height: 25px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 460px) {
   .title {
     font-size: 18px;
   }
@@ -95,27 +95,17 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .offset {
-    max-width: 540px;
+    max-width: 617px;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 617px) {
   .offset {
-    max-width: 480px;
+    max-width: 460px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 460px) {
   .offset {
-    max-width: 414px;
-  }
-}
-@media screen and (max-width: 414px) {
-  .offset {
-    max-width: 360px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .offset {
-    max-width: 360px;
+    max-width: 329px;
   }
 }
 .header {
@@ -159,8 +149,8 @@ a:hover {
 }
 .header .header_mobile .header__burger-btn {
   position: fixed;
-  top: 60px;
-  right: 30px;
+  top: 52px;
+  right: 10px;
 }
 .header .head_info {
   display: flex;
@@ -169,7 +159,7 @@ a:hover {
   text-align: right;
   padding: 22px 0px 5px 0px;
 }
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 617px) {
   .header .head_info {
     display: none;
   }
@@ -186,6 +176,12 @@ a:hover {
 .header .head_info__text:last-child {
   margin-top: -5px;
 }
+@media screen and (max-width: 768px) {
+  .header .head_info__text {
+    font-size: 20.56px;
+    line-height: 24.67px;
+  }
+}
 .header .head_info__text > a {
   text-decoration: underline;
   font-family: "Bebas Neue", sans-serif;
@@ -199,18 +195,18 @@ a:hover {
 .header .header__burger-btn {
   display: none;
   position: relative;
-  height: 25px;
-  width: 40px;
+  height: 26px;
+  width: 23px;
   border: none;
   background: transparent;
 }
 .header .header__burger-btn > span {
   height: 2px;
-  width: 80%;
+  width: 100%;
   transform: scale(1);
   background-color: #1D1D1B;
 }
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 617px) {
   .header .header__burger-btn {
     display: flex;
     align-items: center;
@@ -222,7 +218,7 @@ a:hover {
   position: absolute;
   height: 2px;
   width: 100%;
-  background-color: #1D1D1B;
+  background-color: #000000;
   transition: all 0.3s ease 0s;
 }
 .header .header__burger-btn::before {
@@ -254,8 +250,8 @@ a:hover {
 .header .mobile_nav .mobile_nav-list > li > a {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-size: 25px;
-  line-height: 37px;
+  font-size: 20.56px;
+  line-height: 24.67px;
   color: #FFFFFF;
 }
 .header .mobile_nav .mobile_nav__item-active {
@@ -267,7 +263,7 @@ a:hover {
   background-color: #cccccc;
   margin-top: 20px;
 }
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 617px) {
   .header .nav_menu {
     display: none;
   }
@@ -312,6 +308,11 @@ a:hover {
   background-color: #a0a09f;
   color: #FFFFFF;
 }
+@media screen and (max-width: 768px) {
+  .header .nav_list_menu_item {
+    height: 27.7px;
+  }
+}
 .header .nav_list_menu_item > a {
   display: flex;
   padding: 0px 10px;
@@ -322,6 +323,16 @@ a:hover {
   font-size: 21.06px;
   line-height: 37.63px;
   color: #1D1D1B;
+}
+@media screen and (max-width: 996px) {
+  .header .nav_list_menu_item > a {
+    font-size: 16.06px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .nav_list_menu_item > a {
+    font-size: 12.06px;
+  }
 }
 
 .show_room {
@@ -364,6 +375,18 @@ a:hover {
   width: 340px;
   height: 75px;
   margin-bottom: 12px;
+}
+@media screen and (max-width: 996px) {
+  .show_room .show_room__item > img {
+    width: 276.7px;
+    height: 62.46px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .show_room .show_room__item > img {
+    width: 196px;
+    height: 44.24px;
+  }
 }
 .show_room .show_room__item:last-child > ul {
   margin-top: 16px;
@@ -526,7 +549,7 @@ a:hover {
   padding-right: 315px;
   color: #8e8e8e;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 460px) {
   .footer .footer_block__item > p {
     padding-right: 0px !important;
   }
@@ -561,27 +584,17 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .google_map > img {
-    max-width: 540px;
+    max-width: 617px;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 617px) {
   .google_map > img {
-    max-width: 480px;
+    max-width: 460px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 460px) {
   .google_map > img {
-    max-width: 414px;
-  }
-}
-@media screen and (max-width: 414px) {
-  .google_map > img {
-    max-width: 360px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .google_map > img {
-    max-width: 360px;
+    max-width: 329px;
   }
 }
 .logo {
@@ -591,7 +604,14 @@ a:hover {
 
 @media screen and (max-width: 996px) {
   .logo {
-    width: 70%;
+    width: 276.7px;
+    height: 62.46px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .logo {
+    width: 196px;
+    height: 44.24px;
   }
 }
 .contact-us {

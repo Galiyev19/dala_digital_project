@@ -42,9 +42,11 @@
         }
         .header__burger-btn{
             position: fixed;
-            top: 60px;
-            right: 30px;
+            top: 52px;
+            right: 10px;
         }
+
+       
     } 
 
     .head_info{
@@ -54,7 +56,7 @@
         text-align: right;
         padding: 22px 0px 5px 0px;
 
-        @include mediaTablet {
+        @include phone_xxl {
             display: none;
         }
     }
@@ -71,6 +73,13 @@
         &:last-child{
             margin-top:-5px;
         }
+        
+        @include mediaTablet_sm{
+            font-size: 20.56px;
+            line-height:24.67px;
+        }
+
+        
     }
 
     .head_info__text > a{
@@ -87,19 +96,19 @@
     .header__burger-btn{
         display:none;
         position: relative;
-        height: 25px;
-        width: 40px;
+        height: 26px;
+        width: 23px;
         border: none;
         background: transparent;
 
         & > span{
             height: 2px;
-            width:80%;
+            width:100%;
             transform: scale(1);
             background-color: $dark-text;
         }
 
-        @include mediaTablet {
+        @include phone_xxl {
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -114,7 +123,7 @@
         position: absolute;
         height: 2px;
         width: 100%;
-        background-color: $dark-text;
+        background-color: #000000;
         transition: all 0.3s ease 0s;
     }
 
@@ -160,9 +169,10 @@
         .mobile_nav-list > li > a{
             font-family: $font_main;
             font-weight: 400;
-            font-size:25px;
-            line-height: 37px;
+            font-size:20.56px;
+            line-height: 24.67px;
             color: $white;
+
         }
 
         .mobile_nav__item-active{
@@ -179,7 +189,7 @@
         background-color:#cccccc;
         margin-top: 20px;
 
-        @include mediaTablet {
+        @include phone_xxl {
             display: none;
         }
     }
@@ -232,6 +242,10 @@
             background-color: #a0a09f;
             color: $white
         }
+
+       @include mediaTablet_sm {
+            height: 27.7px;
+       }
     }
 
     .nav_list_menu_item > a{
@@ -245,6 +259,14 @@
         font-size:21.06px;
         line-height:37.63px;
         color: $dark-text;
+
+        @include mediaTablet {
+            font-size:16.06px;
+       }
+
+        @include mediaTablet_sm {
+            font-size:12.06px;
+       }
     }
  
     

@@ -22,11 +22,6 @@
     }
 };
 
-@mixin phone_sm {
-    @media screen and (max-width: $phone_sm) {
-        @content;
-    }
-};
 
 @mixin phone_xs {
     @media screen and (max-width: $phone_xs) {

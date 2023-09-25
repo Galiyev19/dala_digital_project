@@ -28,7 +28,7 @@
                 padding-right: 315px;
                 color: #8e8e8e;
 
-                @include phone_sm{
+                @include phone_lg{
                     padding-right: 0px !important;
                 }
             }
