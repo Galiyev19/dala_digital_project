@@ -23,6 +23,22 @@
         height: 150px;
         border-radius: 20px;
         color: #1d1d1b;
+
+        @include mediaTablet {
+            left: 35%;
+        }
+
+        @include phone_xxl {
+            left: 25%;
+            height: 120px;
+        }
+
+        @include phone_lg {
+            left: 12%;
+            width:80%;
+            height: 80px;          
+        }
+
     }
 }
 
@@ -52,5 +68,21 @@
         height: 150px;
         border-radius: 20px;
         color: #1d1d1b;
+
+
+        @include mediaTablet {
+            left: 35%;
+        }
+
+        @include phone_xxl {
+            left: 25%;
+            height: 120px;
+        }
+
+        @include phone_lg {
+            left: 12%;
+            width:80%;
+            height: 80px;          
+        }
     }
 }

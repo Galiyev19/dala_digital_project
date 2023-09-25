@@ -931,6 +931,24 @@ a:hover {
   border-radius: 20px;
   color: #1d1d1b;
 }
+@media screen and (max-width: 996px) {
+  .popUp-content {
+    left: 35%;
+  }
+}
+@media screen and (max-width: 617px) {
+  .popUp-content {
+    left: 25%;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .popUp-content {
+    left: 12%;
+    width: 80%;
+    height: 80px;
+  }
+}
 
 .popUp_error {
   position: fixed;
@@ -956,4 +974,22 @@ a:hover {
   height: 150px;
   border-radius: 20px;
   color: #1d1d1b;
+}
+@media screen and (max-width: 996px) {
+  .popUp_error-content {
+    left: 35%;
+  }
+}
+@media screen and (max-width: 617px) {
+  .popUp_error-content {
+    left: 25%;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .popUp_error-content {
+    left: 12%;
+    width: 80%;
+    height: 80px;
+  }
 }/*# sourceMappingURL=main.css.map */
