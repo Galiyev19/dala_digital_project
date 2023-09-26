@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @font-face {
-  font-family: "Bebas Neue";
-  src: url("../../fonts/ofont.ru_Bebas Neue.ttf") format("ttf");
-}
-@font-face {
   font-family: "Bahnschrift";
   src: url("../../fonts/Bahnschrift.woff") format("woff"), url("../../fonts/Bahnschrift.woff2") format("woff2");
 }
@@ -29,7 +25,7 @@ a:hover {
 
 @font-face {
   font-family: "Bebas";
-  src: url("../../fonts/ofont.ru_Bebas Neue.ttf");
+  src: url("../../fonts/BebasNeue-Regular.otf");
 }
 .title {
   font-family: "Bebas", sans-serif;
