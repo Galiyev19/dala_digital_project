@@ -44,6 +44,16 @@
             position: fixed;
             top: 52px;
             right: 10px;
+
+            @include mediaTablet {
+                top: 63px;
+                right: 50px;
+            }
+
+            @include phone_lg {
+                top: 52px;
+                right: 50px;
+            }
         }
 
        
@@ -256,16 +266,16 @@
     .nav_list_menu_item  > a {
         font-family: $font_main;
         font-weight: 400;
-        font-size:21.06px;
+        font-size:25.06px;
         line-height:37.63px;
         color: $dark-text;
 
-        @include mediaTablet {
-            font-size:16.06px;
-       }
+        // @include mediaTablet {
+        //     font-size:25.06px;
+        // }
 
         @include mediaTablet_sm {
-            font-size:12.06px;
+            font-size:19.06px;
        }
     }
  

@@ -37,17 +37,10 @@
     font-weight: 700;
 }
 
-@include phone_lg {
-    .title{
-        font-size: 20px;
-        line-height: 25px;
-       
-    }
-}
 
 @include phone_lg {
     .title{
-        font-size: 18px;
-        // line-height: 22px;
+        font-size: 24.06px;
+        line-height: 27.67px;
     }
 }

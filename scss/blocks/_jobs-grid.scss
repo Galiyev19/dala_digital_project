@@ -15,9 +15,9 @@
 
     @include mediaTablet{
         grid-template-columns: repeat(1, 1fr);
-        padding: 0px 2%;
+        // padding: 0px 2%;
         .grid-card > img{
-            width:90%;
+            width:100%;
         }
     }
 }

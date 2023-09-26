@@ -1,7 +1,10 @@
-
+@font-face{
+    font-family:'Bebas';
+    src: url('../../fonts/ofont.ru_Bebas\ Neue.ttf'),
+}
 //FONTS
 // $font-main:'Bebas Neue', sans-serif;
-$font-main:'Bebas Neue', sans-serif;
+$font-main:'Bebas', sans-serif;
 $font-main__bold: 'Bebas Bold', sans-serif;
 $font-accent:  "Bahnschrift", sans-serif;
 $font-size-main: 25.06px;

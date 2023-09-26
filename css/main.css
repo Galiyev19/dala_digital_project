@@ -1,8 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @font-face {
-  font-family: "Bebas Neue", sans-serif;
-  src: url("../../fonts/OFONT.RU_BEBASNEUE(1).TTF");
+  font-family: "Bebas Neue";
+  src: url("../../fonts/ofont.ru_Bebas Neue.ttf") format("ttf");
 }
 @font-face {
   font-family: "Bahnschrift";
@@ -28,8 +27,12 @@ a:hover {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "Bebas";
+  src: url("../../fonts/ofont.ru_Bebas Neue.ttf");
+}
 .title {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-size: 25.06px;
   font-weight: 400;
   line-height: 37.63px;
@@ -66,13 +69,8 @@ a:hover {
 
 @media screen and (max-width: 460px) {
   .title {
-    font-size: 20px;
-    line-height: 25px;
-  }
-}
-@media screen and (max-width: 460px) {
-  .title {
-    font-size: 18px;
+    font-size: 24.06px;
+    line-height: 27.67px;
   }
 }
 .offset {
@@ -152,6 +150,18 @@ a:hover {
   top: 52px;
   right: 10px;
 }
+@media screen and (max-width: 996px) {
+  .header .header_mobile .header__burger-btn {
+    top: 63px;
+    right: 50px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .header .header_mobile .header__burger-btn {
+    top: 52px;
+    right: 50px;
+  }
+}
 .header .head_info {
   display: flex;
   flex-direction: column;
@@ -165,7 +175,7 @@ a:hover {
   }
 }
 .header .head_info__text {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 31.2px;
@@ -184,7 +194,7 @@ a:hover {
 }
 .header .head_info__text > a {
   text-decoration: underline;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 31.2px;
@@ -248,7 +258,7 @@ a:hover {
   row-gap: 30px;
 }
 .header .mobile_nav .mobile_nav-list > li > a {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-weight: 400;
   font-size: 20.56px;
   line-height: 24.67px;
@@ -318,20 +328,15 @@ a:hover {
   padding: 0px 10px;
 }
 .header .nav_list_menu_item > a {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-weight: 400;
-  font-size: 21.06px;
+  font-size: 25.06px;
   line-height: 37.63px;
   color: #1D1D1B;
 }
-@media screen and (max-width: 996px) {
-  .header .nav_list_menu_item > a {
-    font-size: 16.06px;
-  }
-}
 @media screen and (max-width: 768px) {
   .header .nav_list_menu_item > a {
-    font-size: 12.06px;
+    font-size: 19.06px;
   }
 }
 
@@ -621,7 +626,7 @@ a:hover {
   margin-top: 34px;
 }
 .contact-us .title {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-size: 25px;
   font-weight: 400;
   line-height: 36px;
@@ -766,7 +771,7 @@ a:hover {
   display: none;
   color: red;
   margin: 4px 0px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas", sans-serif;
   font-size: 16px;
 }
 .contact-block__form .contact-form__btn {
@@ -863,12 +868,17 @@ a:hover {
 .info::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   width: 28px;
   height: 28px;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (max-width: 460px) {
+  .info::before {
+    top: -1px;
+  }
 }
 .info__location::before {
   background-image: url("../../images/location.png");
@@ -899,10 +909,9 @@ a:hover {
 @media screen and (max-width: 996px) {
   .jobs-grid {
     grid-template-columns: repeat(1, 1fr);
-    padding: 0px 2%;
   }
   .jobs-grid .grid-card > img {
-    width: 90%;
+    width: 100%;
   }
 }
 
